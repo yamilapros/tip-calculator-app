@@ -84,19 +84,21 @@ const validateField = (e) => {
 const cleanHTML = () => {
     btnReset.disabled = false;
     inputBill.value = '';
-    inputBill.blur();
+    inputBill.disabled = true;
     inputPeople.value = '';
-    inputPeople.blur();
+    inputPeople.disabled = true;
     inputCustom.value = '';
+    inputCustom.disabled = true;
     buttonsTip.forEach(button =>{
         button.classList.remove('btn-tip-link');
+        button.disabled = true;
     });
-    dataObj = {
+    /* dataObj = {
         bill: 0,
         tip: 0,
         custom: 0,
         people: 0
-    };
+    }; */
 }
 const calculate = (number) => {
     total = (dataObj.bill + number);
@@ -134,7 +136,9 @@ const getCalculation = () => {
             },1000);
             return;
         }
-    }   
+    }else{
+        console.log('El objeto esta vacio');
+    }  
 }
 
 //Validar inputs
@@ -171,6 +175,13 @@ document.addEventListener('click', e => {
             custom: 0,
             people: 0
         };
+        let resultsObj = {
+            totalTip: 0,
+            totalPerson: 0
+        }
+        location.reload();
+        console.log('RESET', dataObj);
+        console.log('RESULTS', resultsObj);
     }
 });
 
