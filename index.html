@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/cff6d6ecd6.js" crossorigin="anonymous"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <section class="section__calculator">
+    <div class="container__calculator">
+      <h1>SPLI<br>TTER</h1>
+      <div class="row__calculator">
+        <div class="col-50__calculator">
+          <div class="group__bill">
+            <label class="group__label" for="bill">Bill</label>
+            <span class="message__error-bill display-none">Can't be 0 or text</span>
+            <div class="group__bill-input group__input-wrapper">
+              <i class="fas fa-dollar-sign"></i>
+              <input class="group__input" type="text" id="input-bill" placeholder="0" name="bill">
+            </div>
+          </div>
+          <div class="group__tip">
+            <label class="group__label" for="tip">Select Tip %</label>
+            <div class="row__buttons-tip">
+              <button class="btn-tip amount-tip">5%</button>
+              <button class="btn-tip amount-tip">10%</button>
+              <button class="btn-tip amount-tip">15%</button>
+              <button class="btn-tip amount-tip">25%</button>
+              <button class="btn-tip amount-tip">50%</button>
+              <input type="text" class="input-tip" placeholder="Custom" name="custom">
+            </div>
+          </div>
+          <div class="group__person">
+            <label class="group__label" for="people">Number of People</label>
+            <span class="message__error-people display-none">Can't be 0 or text</span>
+            <div class="group__person-input group__input-wrapper">
+              <input class="group__input" type="text" id="input-people" placeholder="0" name="people">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-50__calculator col-50__right">
+          <div class="group__person-tip group__person-right">
+            <div class="person__title">
+              <h6>Tip Amount</h6>
+              <p>/ person</p>
+            </div>
+            <h3 class="person__amount-number person__tip">$0.00</h3>
+          </div>
+          <div class="group__person-total group__person-right">
+            <div class="person__amount">
+              <h6>Total</h6>
+              <p>/ person</p>
+            </div>
+            <h3 class="person__amount-number person__total">$0.00</h3>
+          </div>
+          <button type="button" class="btn-reset">Reset</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+ 
+  
+
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Yamila Prosdócimo Varela</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
